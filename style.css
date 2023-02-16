@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-heading: "Palanquin", sans-serif;
+  --ff-texting: "Staatliches", cursive;
+  
+  --bg-primary: #8e9aaf;
+  --bg-secondary: #cbc0d3;
+  --bg-tertiary: #eff1ff;
+  --bg-quartiary: #e5e5e5;
+  --bg-span: #feeafa;
+
+  --fc-primary: #ffffff;
+  --fc-secondary: #23053a;
+  --fc-tertiary: #4a4e69;
+  --fc-h2: #484069;
+
+  --fs-body: 1.6rem;
+  --fs-heading: 4rem;
+  --fs-text: 1.4rem;
+  --fs-span: 2rem;
+  --lh-span:3.4rem;
+  --lh-p: 2rem;
+
+}
+
+body {
+  font-family: var(--fs-heading);
+  background-color: var(--bg-quartiary);
+
+  font-size: var(--fs-body);
+}
+
+.container {
+  width: 38.0rem;
+  margin: 0 auto;
+
+}
+
+header {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-primary);
+  padding-bottom: 3.6rem;
+}
+
+header img {
+  padding: 3.2rem;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: var(--fs-heading);
+  font-family: var(--ff-texting);
+  line-height: 3.4rem;
+
+  color: var(--fc-primary);
+
+  letter-spacing: 0.5px;
+
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+header > div {
+  background-color: var(--bg-secondary);
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+main {
+  padding: 1.8rem 2.8rem 6rem;
+  background-color: var(--bg-tertiary);
+  margin: 0 auto;
+  
+}
+
+
+main .text p {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-text);
+  color: var(--fc-secondary);
+  line-height: var(--lh-p);
+  text-align: center;
+
+  width: 31.6rem;
+}
+
+main .cards {
+  display: grid;
+  gap: 3.2rem;
+  margin-top: 6.3rem;
+}
+
+.cards {
+  position: relative;
+}
+
+.card img {
+  width: 32.0rem;
+  border-radius: 2rem;
+}
+
+.card h2 {
+  position: absolute;
+  left: 32rem;
+  top: auto;
+}
+
+.card h2 span {
+  font-size: var(--fs-span);
+  font-family: var(--ff-texting);
+  color: var(--fc-h2);
+  background: var(--bg-span);
+  font-weight: 400;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  text-align: center;
+  width: 11.2rem;
+  
+  letter-spacing: 0.5rem;
+}
+
+.cards  {
+  animation: topdown 700ms;
+}
+
+.card span {
+  animation: downtop 700ms 120ms;
+}
+
+
+
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+
+
+
