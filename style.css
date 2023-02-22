@@ -130,3 +130,40 @@ header .logo {
   background: #feeafa;
   border-radius: 2rem;
 }
+
+.cards .card {
+  animation: topdown 700ms;
+}
+
+.cards .card h2 {
+  animation: downtop 700ms 200ms backwards;
+}
+
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
